@@ -1,5 +1,4 @@
 OlamaAi
-│
 ├── app/
 │   └── Http/
 │       └── Controllers/
@@ -10,31 +9,25 @@ OlamaAi
 │           ├── OlamaAiController.php
 │           ├── ApiAiController.php
 │           └── EngineAiController.php
-│
 ├── database/
 │   └── migrations/
 │       ├── xxxx_xx_xx_xxxxxx_create_users_table.php
 │       ├── xxxx_xx_xx_xxxxxx_create_conversations_table.php
 │       ├── xxxx_xx_xx_xxxxxx_create_messages_table.php
 │       └── xxxx_xx_xx_xxxxxx_create_memories_table.php
-│
 ├── routes/
 │   ├── web.php
-│   │
 │   └── modules/
 │       ├── main.php
 │       ├── auth.php
 │       ├── chat.php
 │       ├── ai.php
 │       └── engine.php
-│
 ├── resources/
-│   │
 │   ├── views/
 │   │   ├── auth/
 │   │   │   ├── login.blade.php
 │   │   │   └── signup.blade.php
-│   │   │
 │   │   ├── chat/
 │   │   │   ├── index.blade.php
 │   │   │   ├── history.blade.php
