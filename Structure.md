@@ -1,55 +1,70 @@
-app/
-└── Http/
-    └── Controllers/
-        ├── Controller.php
-        ├── MainController.php
-        ├── OlamaAiController.php
-        ├── ApiAiController.php
-        └── EngineAiController.php
+
+app/Http/Controllers/
+
+Controller.php
+MainController.php
+LoginController.php
+SignupController.php
+OlamaAiController.php
+ApiAiController.php
+EngineAiController.php
 
 
 
-
-    MainController
+MainController
 │
-├── Mengatur request utama
-├── Routing logika aplikasi
-└── Menjadi penghubung semua controller lain
+├─ Pusat aplikasi
+
+LoginController
+│
+├─ Login
+├─ Logout
+└─ Verifikasi user
+
+SignupController
+│
+├─ Registrasi user
+└─ Pembuatan kode login
 
 OlamaAiController
 │
-├── Mengurus chat user
-├── Mengelola prompt
-└── Menampilkan hasil chat
+├─ Chat user
+└─ Tampilan percakapan
 
 ApiAiController
 │
-├── Koneksi ke AI eksternal
-├── Koneksi ke Ollama
-├── Koneksi OpenAI/Gemini (jika ada)
-└── Mengirim & menerima response AI
+├─ Hubungan ke AI
+└─ Request/Response AI
 
 EngineAiController
 │
-├── Memory AI
-├── History chat
-├── Menyimpan percakapan
-├── Mengambil context lama
-└── Menyiapkan data sebelum dikirim ke AI
+├─ History
+├─ Memory
+├─ Context AI
+└─ Penyimpanan percakapan
 
-User
- │
- ▼
-MainController
- │
- ├─► EngineAiController
- │        │
- │        └─ Ambil history
- │
- ├─► ApiAiController
- │        │
- │        └─ Panggil AI
- │
- └─► OlamaAiController
-          │
-          └─ Tampilkan hasil chat
+
+
+
+
+==================================================================
+database/
+└── migrations/
+
+xxxx_xx_xx_xxxxxx_create_users_table.php
+xxxx_xx_xx_xxxxxx_create_conversations_table.php
+xxxx_xx_xx_xxxxxx_create_messages_table.php
+xxxx_xx_xx_xxxxxx_create_memories_table.php
+
+==========================================================
+
+routes/
+│
+├── web.php
+│
+└── modules/
+    ├── main.php
+    ├── auth.php
+    ├── chat.php
+    ├── ai.php
+    └── engine.php
