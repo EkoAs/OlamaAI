@@ -68,3 +68,86 @@ routes/
     ├── chat.php
     ├── ai.php
     └── engine.php
+
+    main.php
+│
+└── Route utama aplikasi
+
+auth.php
+│
+├── Login
+├── Signup
+└── Logout
+
+chat.php
+│
+├── Chat user
+└── History chat
+
+ai.php
+│
+├── API AI
+├── Ollama
+└── AI eksternal
+
+engine.php
+│
+├── Memory
+├── Context
+└── Engine AI
+
+===============================================
+OlamaAi
+│
+├── app/
+│   └── Http/
+│       └── Controllers/
+│
+│           MainController.php
+│           LoginController.php
+│           SignupController.php
+│           OlamaAiController.php
+│           ApiAiController.php
+│           EngineAiController.php
+│
+├── database/
+│   └── migrations/
+│
+│       create_users_table.php
+│       create_conversations_table.php
+│       create_messages_table.php
+│       create_memories_table.php
+│
+└── routes/
+    │
+    ├── web.php
+    │
+    └── modules/
+        │
+        ├── main.php
+        ├── auth.php
+        ├── chat.php
+        ├── ai.php
+        └── engine.php
+
+
+ =============================
+resources\views
+├── auth
+│   ├── login.blade.php
+│   └── signup.blade.php
+├── chat
+│   ├── history.blade.php
+│   ├── index.blade.php
+│   └── partials
+│       ├── message.blade.php
+│       └── sidebar.blade.php
+├── layouts
+│   ├── app.blade.php
+│   ├── auth.blade.php
+│   └── chat.blade.php
+├── main
+│   └── dashboard.blade.php
+└── profile
+    ├── index.blade.php
+    └── memory.blade.php
